@@ -1,7 +1,19 @@
+# Entornos virtuales
 venv/
-__pycache__/
 .env
-data/
-*.db
+
+# Archivos temporales de Python
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Archivos del sistema
 .DS_Store
+Thumbs.db
+
+# Configuración de entorno local
+instance/
+data/
