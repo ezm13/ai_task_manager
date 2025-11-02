@@ -1,0 +1,61 @@
+/* ==== ASISTENTE IA ==== */
+.card.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Contenedor del chat */
+#chat-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mensajes */
+.user-message {
+  align-self: flex-end;
+  background: #00bcd4;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px 12px 0 12px;
+  margin: 4px 0;
+  max-width: 80%;
+}
+
+.ai-message {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.15);
+  color: #e0e0e0;
+  padding: 8px 12px;
+  border-radius: 12px 12px 12px 0;
+  margin: 4px 0;
+  max-width: 80%;
+}
+
+/* Animación */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+  
+}
+
+.ai-message strong {
+  color: #00e6ff;
+}
+.ai-message code {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
