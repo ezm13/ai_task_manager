@@ -1,75 +1,43 @@
- 🤖 AI Task Manager
+## 🚀 Installation & Execution
 
-**AI Task Manager** es una aplicación web desarrollada en **Flask** que combina un gestor de tareas con un **asistente de inteligencia artificial local**.  
-Permite crear, clasificar y gestionar tus tareas diarias con ayuda de un asistente conversacional completamente **offline**, sin depender de conexión a la API de OpenAI.
-
----
-
-## 🧩 Características principales
-
-✅ **Gestión de usuarios** — Registro, inicio y cierre de sesión con autenticación segura.  
-✅ **Panel de control (Dashboard)** — Visualiza, agrega y elimina tareas fácilmente.  
-✅ **Asistente IA local** — Interactúa por chat y analiza automáticamente tus tareas por categoría.  
-✅ **Modo 100% offline** — No requiere conexión a internet ni API externa.  
-✅ **Persistencia de datos** — Las tareas se almacenan en una base de datos SQLite local.  
-✅ **Diseño moderno oscuro** — Interfaz limpia y elegante con Bootstrap + CSS personalizado.
-
----
-
-## 🧠 Tecnología utilizada
-
-| Tecnología | Descripción |
-|-------------|--------------|
-| 🐍 **Python 3.13** | Lenguaje principal del proyecto |
-| ⚙️ **Flask** | Framework backend ligero |
-| 💾 **SQLite** | Base de datos local |
-| 🎨 **Bootstrap 5** | Estilos y diseño responsive |
-| 🤖 **IA local (simulada)** | Motor de análisis y conversación sin conexión |
-| 🔒 **Flask-Login** | Autenticación de usuarios |
-
----
-
-## 🚀 Instalación y ejecución
-
-### 1️⃣ Clonar el repositorio
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/ezm13/ai_task_manager.git
 cd ai_task_manager
-2️⃣ Crear entorno virtual e instalar dependencias
+2️⃣ Create virtual environment and install dependencies
 bash
 Copy code
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-💡 Si no tienes el archivo requirements.txt, puedes generarlo con:
+💡 If you don’t have the requirements.txt file, you can generate it with:
 
 bash
 Copy code
 pip freeze > requirements.txt
-3️⃣ Crear carpeta de datos
+3️⃣ Create the data folder
 bash
 Copy code
 mkdir -p data
 chmod 777 data
-4️⃣ Ejecutar la aplicación
+4️⃣ Run the application
 bash
 Copy code
 python app.py
-Luego abre en tu navegador:
+Then open your browser and go to:
 👉 http://127.0.0.1:5000
 
-💬 Ejemplo de interacción
-yaml
-Copy code
-👤 Usuario: hola  
-🤖 Asistente: ¡Hola! Soy tu asistente IA local. ¿Listo para planificar tu día?
+💬 Example Interaction
+👤 User: hello
+🤖 Assistant: Hi! I’m your local AI assistant. Ready to plan your day?
 
-👤 Usuario: quiero aprender flask avanzado  
-🤖 Asistente: 📊 Parece relacionado con **aprendizaje** (84.3%). ¿Quieres que lo agregue como tarea?
+👤 User: I want to learn advanced Flask
+🤖 Assistant: 📊 It seems related to **learning** (84.3%). Would you like me to add it as a task?
 
-👤 Usuario: sí  
-🤖 Asistente: ✅ Tarea añadida correctamente (aprendizaje, 84.3%).
-🗂️ Estructura del proyecto
+👤 User: yes
+🤖 Assistant: ✅ Task successfully added (learning, 84.3%).
+
+🗂️ Project Structure
 arduino
 Copy code
 ai_task_manager/
@@ -88,12 +56,12 @@ ai_task_manager/
 │   ├── login.html
 │   └── register.html
 └── README.md
-✨ Autor
+✨ Author
 👤 Eroz Meléndez
 📧 eroz@example.com
-💻 Estudiante de Ingeniería en Sistemas
+💻 Systems Engineering Student
 🌍 Costa Rica
 
-🧾 Licencia
-Este proyecto está bajo la licencia MIT.
-Puedes usarlo, modificarlo y mejorarlo libremente mencionando al autor original.
+🧾 License
+This project is licensed under the MIT License.
+You can freely use, modify, and improve it as long as proper credit is given to the original author.
